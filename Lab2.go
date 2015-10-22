@@ -46,7 +46,7 @@ func main() {
 	// Instantiate a new router
 	r := httprouter.New()
 
-	r.POST("/user", GreetUser)
+	r.POST("/hello", GreetUser)
 
-	http.ListenAndServe("localhost:3000", r)
+	http.ListenAndServe("localhost:8080", r)
 }
